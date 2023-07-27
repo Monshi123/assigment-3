@@ -36,19 +36,23 @@
 </head>
 <body class="font-manrope">
    <header class="max-w-6xl mx-auto p-4 lg:p-0">
-    <nav class="bg-[#F85559] rounded-full px-4 py-4">
+    <nav class="bg-[#F85559] rounded-full px-4 py-4 flex-row-reverse lg:flex">
         <div class="navbar">
             <div class="navbar-start">
-              <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              <div class="dropdown lg:hidden">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                 </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box gap-8 w-52 text-lg text-[#FFF]">
-                    <a href=""><li>Home</li></a>
-                    <a href=""><li>About Us</li></a>
-                    <a href=""><li>Shop</li></a>
-                    <a href=""><li>All Fruits</li></a>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <a href=""><li>Home</li></a>
+                  <a href=""><li>About Us</li></a>
+                  <a href=""><li>Shop</li></a>
+                  <a href=""><li>All Fruits</li></a>
                 </ul>
+                <div class="menu menu-sm dropdown-content mt-28 z-[1] navbar-end menu-y flex-row shadow bg-base-100 rounded-box w-52">
+                  <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs rounded-full" />
+                  <div><a href=""><i class="fa-solid fa-magnifying-glass -mx-8 mt-4"></i></a> </div> 
+              </div>
               </div>
               <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal justify-center items-center gap-8 text-lg text-[#FFF]">
