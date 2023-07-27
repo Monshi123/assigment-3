@@ -10,6 +10,11 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
 
@@ -29,29 +34,30 @@
         }
       </script>
     <style>
-        .font-manrope {
-            font-family: 'Manrope', sans-serif;
+        .font-lato {
+          font-family: 'Lato', sans-serif;
         }
     </style>
 </head>
-<body class="font-manrope">
-   <header class="max-w-6xl mx-auto p-4 lg:p-0">
-    <nav class="bg-[#F85559] rounded-full px-4 py-4 flex-row-reverse lg:flex">
-        <div class="navbar">
+<body class="font-lato">
+  <!-- header section -->
+      <header class="max-w-6xl mx-auto p-4 lg:p-0">
+        <nav class="bg-[#F85559] rounded-full px-4 py-4">
+          <div class="navbar">
             <div class="navbar-start">
-              <div class="dropdown lg:hidden">
+              <div class="dropdown lg:hidden mx-[200px]">
                 <label tabindex="0" class="btn btn-ghost btn-circle">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                 </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-20">
                   <a href=""><li>Home</li></a>
                   <a href=""><li>About Us</li></a>
                   <a href=""><li>Shop</li></a>
                   <a href=""><li>All Fruits</li></a>
                 </ul>
-                <div class="menu menu-sm dropdown-content mt-28 z-[1] navbar-end menu-y flex-row shadow bg-base-100 rounded-box w-52">
+                <div class="menu menu-sm dropdown-content mt-28 z-[1] navbar-end menu-y flex-row shadow bg-base-100 rounded-lg w-20">
                   <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs rounded-full" />
-                  <div><a href=""><i class="fa-solid fa-magnifying-glass -mx-8 mt-4"></i></a> </div> 
+                  <div><a href=""><i class="fa-solid fa-magnifying-glass -mx-4 mt-4"></i></a> </div> 
               </div>
               </div>
               <div class="navbar-center hidden lg:flex">
@@ -63,19 +69,17 @@
                 </ul>
               </div>
             </div>
-            <div>
-                  <div class="flex justify-center items-center normal-case text-xl">
-                      <img src="./images/logo.png" alt="" class="">
-                      <a class="btn btn-ghost normal-case text-4xl text-[#FFF]">Fruit Burst</a>
-                  </div>
+                <div class="flex justify-center items-center normal-case text-xl order-first lg:order-none">
+                  <img src="./images/logo.png" alt="" class="">
+                  <a class="btn btn-ghost normal-case text-4xl text-[#FFF]">Fruit Burst</a>
                 </div>
-                <div class="navbar-end hidden lg:inline-flex lg:pl-[140px] menu-horizontal">
-                    <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs rounded-full" />
-                    <div><a href=""><i class="fa-solid fa-magnifying-glass -mx-8"></i></a> </div> 
-                </div>
+                <div class="navbar-end hidden lg:inline-flex lg:pl-[140px] menu-horizontal order-3 lg:order-none">
+                  <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs rounded-full" />
+                  <div><a href=""><i class="fa-solid fa-magnifying-glass -mx-8"></i></a> </div> 
+                </div> 
           </div>
-    </nav>
-   </header> 
+        </nav>
+      </header> 
    <main class="max-w-6xl mx-auto p-4 lg:p-0">
     <!-- banner section -->
     <section class="carousel w-full relative">
